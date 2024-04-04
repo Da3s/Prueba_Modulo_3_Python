@@ -6,8 +6,8 @@ response = request_get(url)
 
 cadena = ""
 
-for dicc in response:
-    cadena = cadena + templates.template2.substitute(titulo_esp= dicc["name"]["spanish"], titulo_en=dicc["name"]["english"], url_img_full=dicc["images"]["full"])
+for diccionario in response:
+    cadena = cadena + templates.template2.substitute(nombre_espanol= diccionario["name"]["spanish"], nombre_ingles=diccionario["name"]["english"], url_img_full=diccionario["images"]["full"])
 
 file = open("AvesChile.html", "w")
 message = templates.template.substitute(contenido= cadena)

@@ -30,10 +30,10 @@ template = Template("""
 template2 = Template("""
     <div class="card" style="width: 18rem;">
         <img src="$url_img_full"
-            class="card-img-top" alt="$titulo_esp" width="200">
+            class="card-img-top" alt="$nombre_espanol" width="200">
         <div class="card-body">
-            <h5 class="card-title">$titulo_esp</h5>
-            <p class="card-text">$titulo_en</p>
+            <h5 class="card-title">$nombre_espanol</h5>
+            <p class="card-text">$nombre_ingles</p>
         </div>
     </div>
 """)
